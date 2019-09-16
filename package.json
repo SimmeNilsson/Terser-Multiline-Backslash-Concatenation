@@ -1,11 +1,10 @@
 {
   "devDependencies": {
-    "terser-webpack-plugin": "^2.0.1",
-    "text-loader": "^0.0.1",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8"
+    "terser": "^4.3.1"
   },
   "scripts": {
-    "build": "yarn webpack"
+    "build": "yarn minify-working && yarn minify-not_working",
+    "minify-working": "terser working.js --output dist/working.js --source-map includeSources=true,url='working.js.map' --verbose -b",
+    "minify-not_working": "terser not_working.js --output dist/not_working.js --source-map includeSources=true,url='not_working.js.map' --verbose -b"
   }
 }
