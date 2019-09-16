@@ -4,7 +4,7 @@
   },
   "scripts": {
     "build": "yarn minify-working && yarn minify-not_working",
-    "minify-working": "terser working.js --output dist/working.js --source-map includeSources=true,url='working.js.map' --verbose -b",
-    "minify-not_working": "terser not_working.js --output dist/not_working.js --source-map includeSources=true,url='not_working.js.map' --verbose -b"
+    "minify-working": "terser working.js --output dist/working.js --source-map includeSources=true,url='working.js.map'",
+    "minify-not_working": "terser not_working.js --output dist/not_working.js --source-map includeSources=true,url='not_working.js.map'"
   }
 }
