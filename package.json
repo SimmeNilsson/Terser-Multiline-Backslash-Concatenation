@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "terser": "^4.3.1"
+    "terser": "^4.8.1"
   },
   "scripts": {
     "build": "yarn minify-working && yarn minify-not_working",
